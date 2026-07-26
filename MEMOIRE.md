@@ -14,7 +14,7 @@ voyage:
   depart: Genève, 24 déc. 11h20
   retour: Genève, 10 janv. 07h35
   # Renseigner après création du dépôt, pour lier les fiches de réservation.
-  depot_url: ""
+  depot_url: "https://github.com/boukal1/puerto-rico"
   image_hero:
     fichier: Castillo_San_Felipe_Del_Morro_(16869927311).jpg
     alt: Le Castillo San Felipe del Morro et la baie de San Juan

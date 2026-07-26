@@ -3,7 +3,7 @@
 Tour de l'île en boucle, sept voyageurs, six étapes. Ce dépôt tient la mémoire du
 voyage et publie le dossier illustré.
 
-**Dossier publié :** https://<utilisateur>.github.io/<depot>/
+**Dossier publié :** https://boukal1.github.io/puerto-rico/
 
 ## Comment ça marche
 
@@ -40,7 +40,8 @@ repérés, budget hébergement, logique météo. C'est la partie qui survit à l
 │   ├── index.html             # généré
 │   └── .nojekyll
 ├── .github/workflows/
-│   └── verifier.yml           # HTML à jour + aucune donnée sensible
+│   ├── verifier.yml           # HTML à jour + aucune donnée sensible
+│   └── pages.yml              # publie docs/ sur GitHub Pages
 ├── verifier-avant-push.sh
 ├── CREDITS.md
 └── .gitignore
@@ -76,11 +77,17 @@ bit exécutable qui manque dans l'index Git :
 git update-index --chmod=+x verifier-avant-push.sh
 ```
 
-Puis `Settings → Pages → Deploy from a branch → main /docs`. Aucune étape de build :
-le HTML est un fichier autonome, CSS embarqué.
+La publication est tenue par `.github/workflows/pages.yml` : tout push sur `main` qui
+touche `docs/`, `MEMOIRE.md` ou le générateur déploie `docs/` sur Pages. Rien à régler
+dans `Settings` — `actions/configure-pages` bascule la source sur GitHub Actions au
+premier passage. Le workflow refuse de publier si `docs/index.html` ne correspond plus
+à `MEMOIRE.md` : on ne met pas en ligne un dossier périmé.
 
-Une fois l'URL du dépôt connue, renseigner `voyage.depot_url` dans `MEMOIRE.md` :
-chaque étape du dossier obtient alors un lien vers sa fiche de réservation.
+Aucune étape de build : le HTML est un fichier autonome, CSS embarqué, et c'est le
+fichier committé qui est servi.
+
+`voyage.depot_url` est renseigné dans `MEMOIRE.md` : chaque étape du dossier porte un
+lien vers sa fiche de réservation.
 
 ## Dépôt public : ce qui n'y figure pas
 
@@ -108,13 +115,18 @@ ignorés par Git : c'est l'endroit prévu pour les garder en local.
 Le dossier embarque une feuille `@media print` : fonds clarifiés, mise en page
 resserrée, étapes insécables, une étape par bloc. Ctrl/Cmd+P suffit.
 
-## Alternative de déploiement
+## Alternatives de déploiement
 
-Servir `/docs` depuis la branche est le plus simple, au prix d'un artefact généré
-dans l'historique. Si tu préfères un dépôt sans HTML committé, remplace le job de
-vérification par `actions/configure-pages` + `actions/deploy-pages`, en générant le
-HTML dans le pipeline. Le `git log` sur `docs/index.html` disparaît alors, mais
-celui sur `MEMOIRE.md` reste.
+Le workflow sert le HTML committé : l'historique porte un artefact généré, en échange
+de quoi `git log docs/index.html` raconte le voyage.
+
+- **Sans workflow.** `Settings → Pages → Deploy from a branch → main /docs` suffit :
+  `docs/.nojekyll` est déjà là pour ça. Supprimer alors `pages.yml`, sinon les deux
+  sources se disputent le déploiement. On perd le garde-fou qui empêche de publier un
+  HTML périmé.
+- **Sans HTML committé.** Générer dans le pipeline : `pip install pyyaml`,
+  `python3 outils/generer.py`, puis `upload-pages-artifact`. Le `git log` sur
+  `docs/index.html` disparaît, celui sur `MEMOIRE.md` reste.
 
 ## Licence
 

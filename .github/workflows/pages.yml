@@ -1,0 +1,64 @@
+name: Publier
+
+# Publie docs/ sur GitHub Pages. Le HTML committé est servi tel quel — il reste
+# l'artefact que `git log docs/index.html` raconte. Le job refuse de publier s'il
+# ne correspond plus à MEMOIRE.md.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/**
+      - MEMOIRE.md
+      - outils/generer.py
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un seul déploiement à la fois, sans annuler celui qui est en cours.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml
+
+      - name: Le HTML committé correspond-il à MEMOIRE.md ?
+        run: |
+          python3 outils/generer.py
+          if ! git diff --quiet -- docs/index.html; then
+            echo "::error::docs/index.html ne correspond pas à MEMOIRE.md — rien n'est publié."
+            echo "Exécuter : python3 outils/generer.py, puis committer."
+            git diff --stat -- docs/index.html
+            exit 1
+          fi
+          echo "HTML à jour, publication autorisée."
+
+      # enablement: true règle la source de Pages sur GitHub Actions si ce n'est
+      # pas déjà fait — aucune manipulation dans Settings n'est nécessaire.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deploiement
+        uses: actions/deploy-pages@v4
