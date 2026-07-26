@@ -34,7 +34,8 @@ repérés, budget hébergement, logique météo. C'est la partie qui survit à l
 │   ├── README.md              # index et politique de confidentialité
 │   └── 01…08-*.md
 ├── outils/
-│   └── generer.py             # MEMOIRE.md → docs/index.html
+│   ├── generer.py             # MEMOIRE.md → docs/index.html
+│   └── credits.py             # attributions Commons → CREDITS.md
 ├── docs/                      # racine publiée
 │   ├── index.html             # généré
 │   └── .nojekyll
@@ -118,4 +119,6 @@ celui sur `MEMOIRE.md` reste.
 ## Licence
 
 Textes et mise en page : usage privé.
-Photographies : voir `CREDITS.md`.
+Photographies : Wikimedia Commons, licences Creative Commons. Les attributions
+exigées par CC BY / BY-SA sont dans `CREDITS.md` ; `python3 outils/credits.py` les
+récupère depuis l'API Commons et réécrit le tableau.
