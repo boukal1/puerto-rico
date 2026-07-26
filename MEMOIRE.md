@@ -99,13 +99,13 @@ etapes:
       regarder, sérieuse à respecter.
     jours:
       - quand: Dim. 27
-        texte: "**Transfert par la côte nord.** Cueva del Indio et ses pétroglyphes taïnos, la crique de Mar Chiquita, déjeuner de poisson à Arecibo. Arrivée pour le coucher du soleil."
+        texte: "**Transfert par la côte nord.** Cueva del Indio et ses pétroglyphes taïnos, la crique de Mar Chiquita — baignade seulement si la houle du nord est faible, voir l'encadré —, déjeuner de poisson à Arecibo. Arrivée pour le coucher du soleil."
       - quand: Lun. 28
-        texte: "**Snorkeling.** Steps Beach et la réserve marine de Tres Palmas le matin, tortues vertes fréquentes. Le phare de Punta Higüero en fin de journée. Cours de surf possible."
+        texte: "**Snorkeling.** Steps Beach et la réserve marine de Tres Palmas le matin, tortues vertes fréquentes. Le phare de Punta Higüero en fin de journée, et Domes Beach juste en dessous : la plage des surfeurs, et le poste d'observation des baleines depuis la terre. Cours de surf possible."
       - quand: Mar. 29
-        texte: "**Aguadilla.** Crash Boat Beach, les ruines en bord de mer, sunset à Playa Jobos."
-    alerte: "**Baignade.** Courants d'arrachement fréquents de décembre à février sur les côtes nord et ouest. Se baigner là où d'autres se baignent, et garder un œil sur l'ado."
-    note: "Le parc du phare est aussi un poste d'observation des baleines à bosse : la saison démarre en janvier."
+        texte: "**Aguadilla et Isabela.** Crash Boat Beach, les ruines en bord de mer, puis les piscines naturelles de Playa Montones à Isabela — protégées par le récif, la baignade la plus tranquille de la côte pour les trois générations. Sunset à Playa Jobos, à deux minutes."
+    alerte: "**Baignade.** Courants d'arrachement fréquents de décembre à février sur les côtes nord et ouest. Se baigner là où d'autres se baignent, et garder un œil sur l'ado. **Mar Chiquita demande sa propre prudence** : au-delà de quatre pieds de houle du nord, les chenaux entre les rochers deviennent dangereux, et la crique reçoit des vagues de fond imprévisibles même par mer calme en apparence. Vérifier le bulletin le matin même, rester du côté gauche de la crique, garder les petits à portée de bras — et ne grimper sur aucun rocher : le calcaire est glissant et coupant."
+    note: "Baleines à bosse : le parc du phare et Domes Beach sont les meilleurs postes depuis la terre, à l'aube ou en fin d'après-midi, jumelles utiles. Mais fin décembre, c'est trop tôt pour en faire une journée : la fenêtre fiable court de la mi-janvier à mars, février étant le sommet, et les sorties en bateau ne tournent qu'à partir de la mi-janvier. Une baleine avant le 30 décembre serait une chance, pas un programme."
 
   - numero: III
     nom: Ponce
@@ -173,7 +173,7 @@ etapes:
       - quand: Sam. 2
         texte: "**Traversée.** Route Ponce → Ceiba, dépôt des voitures, avion ou ferry. Récupération des jeeps, installation à 15h. Coucher de soleil sur le malecón d'Esperanza."
       - quand: Dim. 3
-        texte: "**Le refuge.** Playa Caracas puis La Chiva, pistes en terre, aucun service : glacière et ombre à emporter. **Le soir, kayak sur Mosquito Bay** — la lune est presque nouvelle, les conditions sont idéales."
+        texte: "**Le refuge.** Playa Caracas puis La Chiva — viser les entrées 4 et 9 —, pistes en terre, aucun service : glacière et ombre à emporter. **Les grilles du refuge ferment au coucher du soleil**, prévoir de ressortir avant. **Le soir, kayak sur Mosquito Bay** — la lune est presque nouvelle, les conditions sont idéales."
       - quand: Lun. 4
         texte: "**L'autre visage.** Playa Negra et son sable volcanique au bout d'un lit de rivière, Sun Bay, le fort Conde de Mirasol — le dernier bâti par les Espagnols dans les Amériques."
     alerte: "**Le point critique du voyage.** Sept places sur la même traversée un 2 janvier, c'est incertain : réserver l'avion depuis Ceiba et garder le ferry comme option. Les jeeps sur place se réservent des mois à l'avance. Et la réservation ne déclare qu'un seul voyageur : à régulariser auprès de l'hôte."
@@ -212,6 +212,7 @@ etapes:
         texte: "**Día de Reyes.** Jour férié majeur, tout est fermé dehors : journée sur **Isla Palomino**, l'île privée du resort. Réserver les places au bateau dès le check-in. Le soir, poisson au village de Las Croabas."
       - quand: Jeu. 7
         texte: "**El Yunque.** Départ 7h15 pour être à l'entrée avant 8h. La Coca Falls, la tour Yokahú, Juan Diego, puis Big Tree ou Mt Britton. Descente par les kiosques de Luquillo, fin de journée à Playa Azul."
+    alerte: "**Culebra : une journée entière, à arbitrer contre El Yunque.** Cette étape n'a pas de jour libre — le 5 est un jour d'arrivée, le 6 est férié et se passe sur Isla Palomino, le 7 est El Yunque. Culebra prendrait donc la place du 7. Deux façons d'y aller. Le ferry depuis Ceiba, à vingt minutes du resort, est le moins cher mais le plus risqué : les résidents de Culebra ont une priorité d'embarquement réelle, un billet confirmé ne garantit pas de monter, et les voitures de location sont interdites à bord — se garer à Ceiba et louer sur place. Le catamaran au départ de Fajardo est plus sûr : il combine Flamenco Beach et Culebrita, qui n'est accessible que par bateau, et supprime la loterie du ferry. Compter 11 à 12 h de journée dans les deux cas. **Recommandation : garder El Yunque**, plus court et accessible aux trois générations, et réserver Culebra pour un prochain voyage — ou trancher tôt, le catamaran se remplit vite."
     note: "L'entrée d'El Yunque est gratuite et sans réservation, mais le stationnement est plafonné et se remplit dans la matinée. Deux litres d'eau par personne : il n'y a aucune restauration dans la forêt."
 
   - numero: VI
