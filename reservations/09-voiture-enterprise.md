@@ -36,8 +36,7 @@ Deux fois la même catégorie :
 | Climatisation | oui |
 | Carburant | essence |
 
-Soit **10 places pour 7 voyageurs** — confortable — et **6 petites valises pour
-16 nuits**, ce qui l'est beaucoup moins. Voir le point ouvert plus bas.
+Soit dix places pour sept voyageurs, et six petites valises de coffre au total.
 
 ## Inclus
 
@@ -68,21 +67,6 @@ dépôt remboursé moins le coût de la protection.
 - Restitution le 8 à 22:00, alors que la dernière nuit est à Isla Verde : prévoir
   le retour à l'hôtel après la restitution, neuf minutes de taxi, avant le
   transfert de 5 h 30 le lendemain matin.
-
-## Point ouvert · le volume de bagages
-
-Les places ne posent pas de problème. Le coffre, si : la catégorie CGAR est donnée
-pour **trois petites valises et aucune grande**, donc six petites en tout. Sept
-personnes sur seize nuits, plus la glacière et l'ombre à emporter au refuge de
-Vieques, plus le matériel de snorkeling, ne rentrent pas dans ce volume.
-
-Deux façons de s'en sortir, à trancher tant que l'annulation est gratuite :
-
-- **Faire passer une des deux réservations en SUV intermédiaire ou en monospace.**
-  C'est le plus simple, et ça ne coûte que la différence de tarif.
-- **Ou tout mettre en bagages souples**, qui se tassent là où une valise rigide
-  perd la moitié du coffre. Les valises doivent de toute façon être « légères »
-  pour Vieques, où seul l'essentiel traverse.
 
 ## Cohérence avec le dossier
 

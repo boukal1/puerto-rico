@@ -23,8 +23,8 @@
 
 ## Statut de la réservation
 
-Les dates retenues sont le **5 → 8 janvier** après report. La confirmation
-correspondante n'a pas encore été reçue. À réclamer.
+Les dates retenues sont le **5 → 8 janvier** après report, et la confirmation
+correspondante a été reçue. Réservation en ordre.
 
 ## À savoir
 

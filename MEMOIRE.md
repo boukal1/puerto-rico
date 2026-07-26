@@ -70,7 +70,7 @@ etapes:
         texte: "**Noël.** Piscines, Playa Sardinera, la roche d'Ojo del Buey. Dîner cuisiné dans les villas."
       - quand: Sam. 26
         texte: "**Vieux San Juan.** El Morro et les remparts, le Paseo del Morro, les ruelles pavées. Retour par les kiosques de Piñones au coucher du soleil."
-    alerte: "**À régler avant le départ.** La réservation annonce une arrivée « entre 21h et 22h ». Avec un atterrissage à 22h22, prévenir l'hôtel. Côté voitures, tout est en place : deux véhicules chez Enterprise, comptoir ouvert 24 h sur 24, retraits à 23:30. Reste la question du coffre, six petites valises pour sept personnes."
+    alerte: "**À régler avant le départ.** La réservation annonce une arrivée « entre 21h et 22h ». Avec un atterrissage à 22h22, prévenir l'hôtel. Côté voitures, tout est en place : deux véhicules chez Enterprise, comptoir ouvert 24 h sur 24, retraits à 23:30."
     note: "Les rues du casco sont impraticables en voiture : viser le parking Doña Fela ou Covadonga."
 
   - numero: II
@@ -176,7 +176,7 @@ etapes:
         texte: "**Le refuge.** Playa Caracas puis La Chiva — viser les entrées 4 et 9 —, pistes en terre, aucun service : glacière et ombre à emporter. **Les grilles du refuge ferment au coucher du soleil**, prévoir de ressortir avant. **Le soir, kayak sur Mosquito Bay** — la lune est presque nouvelle, les conditions sont idéales."
       - quand: Lun. 4
         texte: "**L'autre visage.** Playa Negra et son sable volcanique au bout d'un lit de rivière, Sun Bay, le fort Conde de Mirasol — le dernier bâti par les Espagnols dans les Amériques."
-    alerte: "**Le point critique du voyage.** Sept places sur la même traversée un 2 janvier, c'est incertain : réserver l'avion depuis Ceiba et garder le ferry comme option. Les jeeps sur place se réservent des mois à l'avance. Et la réservation ne déclare qu'un seul voyageur : à régulariser auprès de l'hôte."
+    alerte: "**Le point critique du voyage.** Sept places sur la même traversée un 2 janvier, c'est incertain — et la date n'est pas encore ouverte à la réservation : surveiller l'ouverture des ventes, prendre l'avion depuis Ceiba et garder le ferry comme option. Les jeeps sur place se réservent des mois à l'avance."
     note: "Ni crème solaire ni antimoustique avant la sortie sur la baie : les produits sont interdits dans l'eau."
 
   - numero: V
@@ -277,21 +277,9 @@ actions:
       critique: true
       pourquoi: Le parc de l'île est minuscule. Sans véhicule, les plages du refuge sont inaccessibles.
     - quoi: Traversée pour 7 vers Vieques
-      urgence: Immédiat
+      urgence: Dès ouverture
       critique: true
-      pourquoi: Réserver l'avion depuis Ceiba, tenter le ferry en parallèle. Jamais l'inverse.
-    - quoi: Volume de coffre des 2 voitures
-      urgence: Dès que possible
-      critique: false
-      pourquoi: "Les deux véhicules sont réservés chez Enterprise, retrait le 24 à 23:30 : 10 places pour 7, mais 6 petites valises et aucune grande pour 16 nuits. Passer l'une des deux en SUV ou monospace tant que l'annulation est gratuite, ou tout mettre en bagages souples."
-    - quoi: Capacité de Haven House
-      urgence: Immédiat
-      critique: true
-      pourquoi: La réservation ne déclare qu'un voyageur. À régulariser auprès de l'hôte.
-    - quoi: Confirmation El Conquistador
-      urgence: Immédiat
-      critique: true
-      pourquoi: Les dates 5 → 8 janvier ne sont pas encore confirmées par écrit.
+      pourquoi: La date du 2 janvier n'est pas encore ouverte à la réservation. Surveiller l'ouverture des ventes, prendre l'avion depuis Ceiba en priorité et tenter le ferry en parallèle. Jamais l'inverse.
     - quoi: Mosquito Bay, nuit du 3
       urgence: Dès que possible
       critique: false

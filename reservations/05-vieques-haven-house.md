@@ -13,13 +13,7 @@
 |---|---|
 | Arrivée | 15:00 |
 | Départ | 12:00 |
-| Occupation déclarée | **1 voyageur** |
-
-## Point bloquant
-
-La réservation ne mentionne **qu'un seul voyageur** alors que le groupe compte sept
-personnes. À régulariser auprès de l'hôte : sans cela, frais par personne non
-facturés et couverture AirCover potentiellement caduque.
+| Occupation | 7 personnes, confirmée sur la réservation Airbnb |
 
 ## Accès à l'île
 
@@ -36,6 +30,10 @@ Deux moyens de traverser depuis Ceiba :
   est vendue en ligne, le reste part au guichet. Obtenir sept places sur la même
   traversée un 2 janvier relève de la chance. À traiter comme une option, pas comme
   le plan principal.
+
+**La date du 2 janvier n'est pas encore ouverte à la réservation**, ni pour l'avion
+ni pour le ferry. Surveiller l'ouverture des ventes : c'est la seule action encore
+bloquante de cette étape.
 
 Être au terminal **1 h avant** le départ, l'embarquement ferme 10 minutes avant.
 
