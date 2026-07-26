@@ -1,0 +1,32 @@
+name: Vérifier
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  coherence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml
+
+      - name: Le HTML est-il à jour ?
+        run: |
+          python3 outils/generer.py
+          if ! git diff --quiet -- docs/index.html; then
+            echo "::error::docs/index.html ne correspond pas à MEMOIRE.md."
+            echo "Exécuter : python3 outils/generer.py, puis committer."
+            git diff --stat -- docs/index.html
+            exit 1
+          fi
+          echo "HTML à jour."
+
+      - name: Aucune donnée sensible publiée ?
+        run: bash verifier-avant-push.sh

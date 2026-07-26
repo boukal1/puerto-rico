@@ -1,0 +1,10 @@
+# Confirmations d'origine : jamais dans ce dépôt public
+confirmations/
+*.pdf
+.env
+.env.local
+
+# Système
+.DS_Store
+Thumbs.db
+__pycache__/
