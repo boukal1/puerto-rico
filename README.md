@@ -68,6 +68,7 @@ git init -b main
 git add . && git commit -m "Dossier de voyage Porto Rico 2026-2027"
 gh repo create porto-rico-2027 --public --source=. --push
 ln -sf ../../verifier-avant-push.sh .git/hooks/pre-commit
+cp .motifs-sensibles.exemple .motifs-sensibles && $EDITOR .motifs-sensibles
 ```
 
 Si le hook ne se déclenche pas, ou si la CI échoue sur `Permission denied`, c'est le
@@ -106,6 +107,21 @@ Deux réserves assumées, à trancher par le propriétaire du dépôt :
 `verifier-avant-push.sh`, branché en hook `pre-commit`, refuse le commit si l'un de
 ces éléments réapparaît, et vérifie au passage que `docs/index.html` correspond bien
 à `MEMOIRE.md`. La CI refait les deux contrôles sur chaque push.
+
+Le script est en deux moitiés, et la séparation est le fond du sujet :
+
+- **les formes** sont dans le script, parce qu'elles ne révèlent rien : adresse
+  e-mail, numéro de neuf chiffres ou plus, code confidentiel en `NNNN.NNN.NNN` ;
+- **les valeurs exactes** sont dans `.motifs-sensibles`, ignoré par Git. C'est là que
+  vont les codes alphanumériques, qu'aucune forme ne sait isoler sans attraper au
+  passage les couleurs hexadécimales du CSS. Modèle commenté :
+  `.motifs-sensibles.exemple`.
+
+Sans `.motifs-sensibles`, le script tourne quand même et le dit : les formes seules
+sont vérifiées. C'est le mode dans lequel tourne la CI, qui n'a pas le fichier.
+
+Il désigne les lignes fautives par `fichier:ligne` sans jamais recopier ce qu'il a
+trouvé : les logs d'Actions d'un dépôt public sont publics.
 
 Les confirmations d'origine restent hors du dépôt. `confirmations/` et `*.pdf` sont
 ignorés par Git : c'est l'endroit prévu pour les garder en local.

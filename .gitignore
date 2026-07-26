@@ -4,6 +4,10 @@ confirmations/
 .env
 .env.local
 
+# Valeurs exactes surveillées par verifier-avant-push.sh : jamais committées.
+# Le modèle documenté, lui, est suivi (.motifs-sensibles.exemple).
+.motifs-sensibles
+
 # Système
 .DS_Store
 Thumbs.db

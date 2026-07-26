@@ -1,0 +1,26 @@
+# Valeurs exactes que verifier-avant-push.sh doit refuser de publier.
+#
+# Copier ce fichier en .motifs-sensibles — ignoré par Git, il ne quitte jamais
+# la machine — et y mettre les vraies valeurs, une par ligne, syntaxe grep -E.
+# Les lignes vides et celles commençant par # sont ignorées.
+#
+#     cp .motifs-sensibles.exemple .motifs-sensibles
+#     $EDITOR .motifs-sensibles
+#
+# À y mettre : ce que le script ne peut pas reconnaître à la forme, c'est-à-dire
+# pour l'essentiel les codes alphanumériques — impossibles à isoler sans
+# attraper au passage les couleurs hexadécimales du CSS et l'encodage des URL
+# de Commons.
+#
+#   - numéros de confirmation alphanumériques  (gabarit : AANNAN, AAAAANANNA)
+#   - codes confidentiels non numériques
+#   - téléphones privés, dans chacune de leurs écritures
+#     (avec tirets, avec espaces, avec indicatif, sans)
+#   - numéros de programme de fidélité
+#   - identifiants de dossier des loueurs et transporteurs
+#
+# Inutile d'y remettre : adresses e-mail, numéros de confirmation à 9 chiffres
+# ou plus, codes confidentiels de forme NNNN.NNN.NNN. Le script les reconnaît
+# déjà à la forme, sans avoir besoin de leur valeur.
+#
+# Un point dans une valeur se protège : 1234\.567\.890
