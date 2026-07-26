@@ -70,7 +70,7 @@ etapes:
         texte: "**Noël.** Piscines, Playa Sardinera, la roche d'Ojo del Buey. Dîner cuisiné dans les villas."
       - quand: Sam. 26
         texte: "**Vieux San Juan.** El Morro et les remparts, le Paseo del Morro, les ruelles pavées. Retour par les kiosques de Piñones au coucher du soleil."
-    alerte: "**À régler avant le départ.** La réservation annonce une arrivée « entre 21h et 22h ». Avec un atterrissage à 22h22, prévenir l'hôtel. Côté voitures, la question de l'horaire est réglée : le comptoir Enterprise est ouvert 24 h sur 24 et le retrait est pris à 23:30 — reste à réserver le second véhicule, cinq places ne suffisent pas."
+    alerte: "**À régler avant le départ.** La réservation annonce une arrivée « entre 21h et 22h ». Avec un atterrissage à 22h22, prévenir l'hôtel. Côté voitures, tout est en place : deux véhicules chez Enterprise, comptoir ouvert 24 h sur 24, retraits à 23:30. Reste la question du coffre, six petites valises pour sept personnes."
     note: "Les rues du casco sont impraticables en voiture : viser le parking Doña Fela ou Covadonga."
 
   - numero: II
@@ -280,10 +280,10 @@ actions:
       urgence: Immédiat
       critique: true
       pourquoi: Réserver l'avion depuis Ceiba, tenter le ferry en parallèle. Jamais l'inverse.
-    - quoi: 2e véhicule à SJU
-      urgence: Immédiat
-      critique: true
-      pourquoi: "Le premier est réservé chez Enterprise, retrait le 24 à 23:30 : 5 places et 3 petites valises, soit la moitié du groupe. Viser un SUV ou un monospace pour le second, les bagages ne tiennent pas autrement. Comptoir ouvert 24 h sur 24, cette question est réglée."
+    - quoi: Volume de coffre des 2 voitures
+      urgence: Dès que possible
+      critique: false
+      pourquoi: "Les deux véhicules sont réservés chez Enterprise, retrait le 24 à 23:30 : 10 places pour 7, mais 6 petites valises et aucune grande pour 16 nuits. Passer l'une des deux en SUV ou monospace tant que l'annulation est gratuite, ou tout mettre en bagages souples."
     - quoi: Capacité de Haven House
       urgence: Immédiat
       critique: true
@@ -448,7 +448,7 @@ Repérages faits pendant la préparation. Rien n'est réservé sauf mention cont
 | Vol Ceiba → Vieques | Vieques Air Link, Cape Air | Immédiatement — petits appareils, franchise bagages limitée |
 | Ferry Ceiba ⇄ Vieques | puertoricoferry.com | Dès ouverture des ventes, en second recours |
 | Mosquito Bay | Taíno Aqua Adventures, Abe's Snorkeling, Black Beard Sports | Sortie privatisée pour 7 |
-| Voiture à SJU | Enterprise, Car Rental Center du parking | **1re réservée**, 24 déc. → 8 janv. · 2e à réserver |
+| Voitures à SJU | Enterprise, Car Rental Center du parking | **2 véhicules réservés**, 24 déc. → 8 janv. |
 | Catamaran depuis Fajardo | East Island Excursions, Salty Dog, Erin Go Bragh | Voie recommandée si la journée Culebra est retenue |
 | Cours de surf | Rincón Surf School, Puntas Surf School | Sur place, 28 déc. |
 | Cabezas de San Juan | Para la Naturaleza | Visite guidée uniquement, sur réservation |

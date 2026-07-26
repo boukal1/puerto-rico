@@ -12,7 +12,7 @@ Une fiche par réservation, réduite à l'opérationnel.
 | 06 | El Conquistador, Fajardo | 5 → 8 janv. | [fajardo-el-conquistador.md](06-fajardo-el-conquistador.md) |
 | 07 | Residence Inn Isla Verde | 8 → 9 janv. | [isla-verde-residence-inn.md](07-isla-verde-residence-inn.md) |
 | 08 | Transfert hôtel → aéroport | 9 janv. | [taxi-retour.md](08-taxi-retour.md) |
-| 09 | Voiture Enterprise, SJU | 24 déc. → 8 janv. | [voiture-enterprise.md](09-voiture-enterprise.md) |
+| 09 | 2 voitures Enterprise, SJU | 24 déc. → 8 janv. | [voiture-enterprise.md](09-voiture-enterprise.md) |
 
 ## Ce que ces fiches ne contiennent pas
 
